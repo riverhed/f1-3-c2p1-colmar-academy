@@ -1,0 +1,366 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+  background-color: #2B4C6F;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, header. footer, nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem 1rem 0;
+  transition-property: text-decoration;
+  transition-duration: 500ms;
+}
+
+header, .main-banner, .info-banner, .course-catalog, .thesis-exhibit {
+  display: flex;
+  max-width: inherit;
+}
+
+.main-banner, .info-banner, .course-catalog, .thesis-exhibit, footer {
+  position: relative;
+  top: 4rem;
+}
+
+.hero-content {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.info-boxes {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #133253;
+  border-bottom: 1px solid #133253;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.info-box img {
+  width: 35%;
+  margin: 1rem 1rem;
+}
+
+.info-box-text {
+  width: 65%;
+  padding-right: 1rem;
+}
+
+.info-box-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.course-catalog h2, .thesis-exhibit h2 {
+  margin: 2rem 0;
+}
+
+/* Header Styles */
+header.desktop {
+  color: grey;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto 1.5rem;
+  position: fixed;
+  z-index: 1;
+}
+
+header.mobile {
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  position: fixed;
+  z-index: 1;
+  padding: 1rem auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header.mobile img {
+  height: 2rem;
+  width: auto;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.name {
+  display: flex;
+}
+
+.name span:first-child {
+  font-weight: 900;
+}
+
+.name span:last-child {
+  font-weight: 200;
+}
+
+header nav {
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Main Banner Styles */
+.main-banner {
+  background-color: #4A6B8A;
+}
+
+.main-banner-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15% 0;
+}
+
+.main-banner .button {
+  background-color: #041D37;
+  border: none;
+  color: white;
+  padding: 0.5rem auto;
+  text-align: center;
+  line-height: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  width: 60%;
+  height: 2rem;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+/* Info Banner Styles */
+.info-banner {
+  background-color: #738CA6;
+}
+
+.info-banner-content {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-banner-content h2, p {
+  margin-bottom: 1.5rem;
+}
+
+.info-banner a {
+  color: ##2856B6;
+}
+
+/* Course Catalog Banner Styles */
+.course-catalog {
+  background-color: #4A6B8A;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.course {
+  width: 30%;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.course-text {
+  margin: 1rem 0 1.5rem 1rem;
+}
+
+.course-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.course-text p {
+  margin-top: 0.5rem;
+}
+
+/* Thesis Exhibit Styles */
+.thesis-exhibit {
+  background-color: #738CA6;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis-container {
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: space-between;
+}
+
+.thesis-banner-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thesis-container .info-boxes {
+  margin-top: 2rem;
+  border-top: 1px solid #133253;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+@media only screen and (min-width: 766px) {
+  .mobile {
+    display: none;
+  }
+
+  nav li:hover {
+    text-decoration: underline;
+  }
+
+  .info-box:hover, .course:hover {
+    color: white;
+    background-color: #041D37;
+  }
+
+  .main-banner .button:hover {
+    background-color: #738CA6;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 765px) {
+  .desktop {
+    display: none;
+  }
+
+  header.mobile {
+    display: contents;
+  }
+
+  .main-banner {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-banner-content {
+    width: 80%;
+    padding: 1.5rem 1rem;
+  }
+
+  .main-banner-content h1 {
+    margin-bottom: 2rem;
+  }
+
+  .main-banner-content h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .main-banner-content .button, .main-banner .hero-content, .info-boxes, .info-box img, .courses, .course, .thesis-exhibit, .thesis-container, .thesis-container .hero-content {
+    width: 100%;
+  }
+
+  .main-banner .hero-content, .info-box img {
+    margin: auto;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    margin: 1rem;
+  }
+
+  .info-box-text {
+    margin: 1rem 1rem;
+  }
+
+  .main-banner .button:active {
+    background-color: #738CA6;
+  }
+
+  .course:active {
+    color: white;
+    background-color: #041D37;
+  }
+
+  .course-catalog {
+    max-width: 100%;
+  }
+
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course {
+    margin-bottom: 0.5rem
+  }
+
+  .course h3 {
+    margin-right: 1rem;
+  }
+
+  .thesis-container .hero-content {
+    margin: 2rem 0 0 0;
+  }
+
+  footer {
+    margin-left: 1rem;
+  }
+}
